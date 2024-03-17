@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* オーバーレイの背景色と透明度 */
+  display: none; /* 初期状態では非表示 */
+  z-index: 9999; /* 最前面に表示 */
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#explanation{
+    text-align: center;
+    border:5px double #CCC;
+    padding:10px;
+    border-radius:10px;
+    background:#EEE;
+}
+
+select{
+    border-radius:20px;
+    width:310px;
+    height:40px;
+    font-size:20px;
+    text-align:center;
+}
+
+#title {
+    font-size:3em;
+    text-align:center;
+}
+
+.prefecture {
+    text-align:center;
+}
+
+.day {
+    text-align:center;
+}
+
+#form_area {
+    text-align:center;
+}
+
+.btn {
+    font-size:20px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    position: relative;
+    width: 250px;
+    height:50px;
+    margin: auto;
+    padding: 7px 40px;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    background-color: #e9f6fb;
+    border-image-source: repeating-linear-gradient(45deg, #27acd9 0, #27acd9 6px, rgba(0, 0, 0, 0) 6px, rgba(0, 0, 0, 0) 8px);
+    border-image-slice: 4;
+    border-width: 4px;
+    border-image-repeat: round;
+    border-style: solid;
+    color: #27acd9;
+}
+
+.btn:hover {
+    border: 4px solid #27acd9;
+    color: #27acd9;
+}
+
+.sub_title{
+    font-size:25px;
+    text-align: center;
+}
+
+.chat-response-title{
+    text-align: center;
+}
+
+.chat-response-area{
+    display:inline-block;
+    border: 2px solid #a3a3a3;
+    padding: 15px;
+    border-radius: 10px;
+    background-color:#CAE8E2;
+}
+
+.response-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.btn_09 {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    width: 190px;
+    height:20px;
+    margin: auto;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    background: linear-gradient(to top, rgb(5, 130, 174), #27acd9);
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+}
+
+a.btn_09:hover {
+    color: #fff;
+    opacity: 0.5;
+}
